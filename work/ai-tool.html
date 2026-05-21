@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>An AI Authoring Tool for Knowledge Articles &mdash; Holly Melone</title>
+  <meta name="description" content="Designing an AI tool that drafts and edits knowledge articles from support cases using structured templates and style guidelines." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Inter+Tight:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23F4F1E8'/%3E%3Crect x='10' y='10' width='80' height='80' fill='%23E8FF3A'/%3E%3Ctext x='50' y='70' text-anchor='middle' font-family='Georgia,serif' font-size='62' fill='%230E0E0C' font-style='italic'%3Ehm%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="masthead">
+    <div class="wrap row">
+      <a class="brand" href="../index.html" aria-label="Holly Melone home">
+        <strong>Holly Melone</strong>
+        <span class="pipe">/</span>
+        <span class="tag-line">Knowledge &amp; Post-Sales Content</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./" aria-current="page">Work</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../resume.html">Resume</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <article>
+
+      <header class="wrap cs-head">
+        <span class="kicker">Case Study / 03 · 2024 &mdash; 2025</span>
+        <h1>An AI authoring tool for knowledge articles.</h1>
+        <p class="deck">Designing an internal tool that drafts and edits knowledge articles from support cases: on-brand, on-template, and grounded in real customer interactions.</p>
+      </header>
+
+      <section class="wrap">
+        <dl class="cs-meta">
+          <div>
+            <dt>Role</dt>
+            <dd>Designer &amp; product owner</dd>
+          </div>
+          <div>
+            <dt>Built at</dt>
+            <dd>Flexera</dd>
+          </div>
+          <div>
+            <dt>Audience</dt>
+            <dd class="accent">Internal authors &mdash; Support &amp; CS</dd>
+          </div>
+          <div>
+            <dt>Disciplines</dt>
+            <dd>AI workflows · Structured authoring · Style systems</dd>
+          </div>
+        </dl>
+      </section>
+
+      <!-- ============ CONTEXT ============ -->
+      <section class="wrap cs-section">
+        <span class="label">01 / Context</span>
+        <h2>Closing the gap between case and article.</h2>
+        <div class="prose">
+          <p class="drop">
+            Inside the broader Flexera knowledge transformation, one specific friction point kept surfacing: the gap between resolving a customer case and producing a publishable knowledge article from it. The information was there. The expertise was there. What was missing was time and structure, the cognitive overhead of turning a case resolution into a clean, standards-compliant article was high enough that valuable knowledge stayed locked in tickets.
+          </p>
+          <p>
+            By the time I started designing this tool, the system had what it needed to make AI-assisted authoring trustworthy: a defined taxonomy, structured content templates, an explicit style guide, and a governed lifecycle. The opportunity was to use AI to reduce the friction of capture, while letting the existing standards do the work of quality.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ APPROACH ============ -->
+      <section class="wrap cs-section">
+        <span class="label">02 / Approach</span>
+        <h2>Structure first, AI second.</h2>
+        <div class="prose">
+          <p>The premise: AI is only useful in content workflows when it operates inside a structure. A model that writes "good-sounding" articles without enforced templates will reliably produce drift: off-brand voice, inconsistent metadata, hallucinated steps, or content that bypasses the lifecycle. The goal here was the opposite: every AI output had to land inside the same shape an experienced author would produce.</p>
+        </div>
+
+        <ol class="approach-list">
+          <li>
+            <div>
+              <h4>Encoded the article templates as authoring constraints.</h4>
+              <p>The existing content types (how-to, troubleshooting, reference, known issue) became explicit scaffolds that the tool generates into. The model can't produce shape that doesn't exist in the IA, which removes a whole class of quality risk before review.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>Built the style guide into the prompt system.</h4>
+              <p>Voice, tense, terminology, accessibility conventions, formatting rules, the things a human editor would enforce on review, encoded as instructions the tool applies during drafting and again during edit. Style enforcement happens upstream of the human reviewer, not as a cleanup step.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>Grounded drafts in the actual case.</h4>
+              <p>The tool reads the support case, extracts symptoms, environment, root cause, and resolution, and structures them into the appropriate template, so the article reflects what really happened, not a plausible-sounding generalization.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>Designed for human-in-the-loop review.</h4>
+              <p>The tool is explicitly an <em>assistant</em>, not an autopilot. It produces a draft positioned for fast author review and approval, surfaces where it's uncertain, and integrates into the existing governance and quality workflow. The author stays accountable; the tool removes friction.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>Treated the tool as part of the knowledge system, not a side experiment.</h4>
+              <p>Outputs go through the same lifecycle, taxonomy, and quality reviews as any other article. There is no parallel &ldquo;AI-generated content&rdquo; channel with different rules, which is what keeps trust intact across customers and internal teams.</p>
+            </div>
+          </li>
+        </ol>
+
+        <figure style="margin: var(--s-7) 0 0;">
+          <svg viewBox="0 0 800 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="pipeline-title pipeline-desc" style="width: 100%; height: auto; max-width: 100%;">
+            <title id="pipeline-title">The AI authoring pipeline</title>
+            <desc id="pipeline-desc">A resolved support case flows into a structured template, which the AI uses to draft an article, which a human reviews before it is published into the governed knowledge base.</desc>
+
+            <!-- Flow boxes -->
+            <!-- 1: Resolved case -->
+            <g>
+              <rect x="20" y="110" width="130" height="70" fill="#F4F1E8" stroke="#0E0E0C" stroke-width="1.5"/>
+              <text x="85" y="140" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="15" font-style="italic" fill="#0E0E0C">Resolved</text>
+              <text x="85" y="158" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="15" font-style="italic" fill="#0E0E0C">case</text>
+            </g>
+            <!-- 2: Structured template -->
+            <g>
+              <rect x="190" y="110" width="130" height="70" fill="#F4F1E8" stroke="#0E0E0C" stroke-width="1.5"/>
+              <text x="255" y="140" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="15" font-style="italic" fill="#0E0E0C">Structured</text>
+              <text x="255" y="158" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="15" font-style="italic" fill="#0E0E0C">template</text>
+            </g>
+            <!-- 3: AI draft (accent) -->
+            <g>
+              <rect x="360" y="110" width="130" height="70" fill="#E8FF3A" stroke="#0E0E0C" stroke-width="1.5"/>
+              <text x="425" y="148" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="15" font-style="italic" fill="#0E0E0C">AI draft</text>
+            </g>
+            <!-- 4: Human review -->
+            <g>
+              <rect x="530" y="110" width="130" height="70" fill="#0E0E0C" stroke="#0E0E0C" stroke-width="1.5"/>
+              <text x="595" y="140" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="15" font-style="italic" fill="#F4F1E8">Human</text>
+              <text x="595" y="158" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="15" font-style="italic" fill="#F4F1E8">review</text>
+            </g>
+            <!-- 5: Published -->
+            <g>
+              <rect x="680" y="110" width="100" height="70" fill="#F4F1E8" stroke="#0E0E0C" stroke-width="1.5"/>
+              <text x="730" y="148" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="15" font-style="italic" fill="#0E0E0C">Published</text>
+            </g>
+
+            <!-- Connecting arrows -->
+            <g stroke="#0E0E0C" stroke-width="1.5" fill="none">
+              <line x1="150" y1="145" x2="185" y2="145"/><path d="M 185 145 L 177 141 M 185 145 L 177 149"/>
+              <line x1="320" y1="145" x2="355" y2="145"/><path d="M 355 145 L 347 141 M 355 145 L 347 149"/>
+              <line x1="490" y1="145" x2="525" y2="145"/><path d="M 525 145 L 517 141 M 525 145 L 517 149"/>
+              <line x1="660" y1="145" x2="675" y2="145"/><path d="M 675 145 L 667 141 M 675 145 L 667 149"/>
+            </g>
+
+            <!-- Annotation: governance enforced across the whole flow -->
+            <g>
+              <line x1="255" y1="95" x2="255" y2="80" stroke="#6F6E68" stroke-width="1" stroke-dasharray="3 3"/>
+              <line x1="425" y1="95" x2="425" y2="80" stroke="#6F6E68" stroke-width="1" stroke-dasharray="3 3"/>
+              <line x1="255" y1="80" x2="425" y2="80" stroke="#6F6E68" stroke-width="1" stroke-dasharray="3 3"/>
+              <text x="340" y="68" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9" letter-spacing="0.08em" fill="#6F6E68">TAXONOMY · STYLE · TEMPLATES ENFORCED HERE</text>
+            </g>
+            <!-- Annotation: human owns the gate -->
+            <g>
+              <line x1="595" y1="195" x2="595" y2="215" stroke="#6F6E68" stroke-width="1" stroke-dasharray="3 3"/>
+              <text x="595" y="232" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9" letter-spacing="0.08em" fill="#6F6E68">HUMAN OWNS THE GATE</text>
+            </g>
+          </svg>
+          <figcaption style="font-family: var(--mono); font-size: var(--t-mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-2); margin-top: var(--s-3);">Fig. 01 &mdash; The pipeline. Structure is enforced before the AI ever drafts, and a human owns the gate before anything publishes.</figcaption>
+        </figure>
+      </section>
+
+      <!-- ============ OUTCOMES ============ -->
+      <section class="wrap cs-section">
+        <span class="label">03 / Outcomes</span>
+        <h2>What changed for authors.</h2>
+        <div class="prose">
+          <p>The point of the tool isn't volume. It's <em>conversion</em>: turning resolved cases into reusable knowledge at a rate the system couldn't sustain through purely manual authoring.</p>
+        </div>
+
+        <div class="outcomes outcomes--hero">
+          <div class="stat">
+            <div class="figure text-figure">Faster<br>case&ndash;to&ndash;publish</div>
+            <p>Less friction between resolving a case and publishing a reusable article.</p>
+          </div>
+          <div class="stat">
+            <div class="figure text-figure">Consistent<br>by default</div>
+            <p>Voice, structure, and metadata stay on-standard across every author.</p>
+          </div>
+          <div class="stat">
+            <div class="figure text-figure">Same<br>guardrails</div>
+            <p>AI output runs through the same governance, lifecycle, and quality reviews as human-authored content.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ REFLECTIONS ============ -->
+      <section class="wrap cs-section">
+        <span class="label">04 / Reflections</span>
+        <h2>What I learned about AI &amp; content.</h2>
+        <div class="prose">
+          <p>
+            <strong>The system is the prompt.</strong> Most of the quality of an AI-authored article comes from constraints set <em>before</em> the model is invoked: the template it must fill, the taxonomy it must label against, the style rules it must obey. Prompts that try to do all this at runtime are fragile.
+          </p>
+          <p>
+            <strong>Treat AI output as a draft, not a deliverable.</strong> The tool earns trust by being explicitly an assistant. Authors review, edit, and own. That framing changed how the program was received internally, less "AI is replacing us," more "AI is doing the boring half."
+          </p>
+          <p>
+            <strong>Invest in structure before you invest in models.</strong> Organizations rushing to put AI on top of unstructured knowledge bases are buying speed they can't trust. The tool worked because the underlying system was already governed.
+          </p>
+        </div>
+      </section>
+      <nav class="wrap cs-nav" aria-label="Case study navigation">
+        <a href="help-center.html">
+          <span class="label-small">Previous</span>
+          ← 02 &mdash; Post-Sales Help Center
+        </a>
+        <a class="next" href="twn.html">
+          <span class="label-small">Next</span>
+          04 &mdash; TWN Knowledge System →
+        </a>
+      </nav>
+
+    </article>
+
+  </main>
+
+  <footer class="colophon">
+    <div class="wrap">
+      <div class="row">
+        <div>
+          <h4>Holly Melone</h4>
+          <p>Knowledge strategy and operations leader. Currently Senior Knowledge Manager at Flexera, based in Tampa Bay, Florida.</p>
+        </div>
+        <div>
+          <h4>Index</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../resume.html">Resume</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Elsewhere</h4>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/holly-melone/">LinkedIn</a></li>
+            <li><a href="mailto:hollymelone@yahoo.com">Email</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copy">
+        <span>© Holly Melone &nbsp;·&nbsp; <span class="year">2026</span></span>
+        <span>All rights reserved</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>document.querySelectorAll(".year").forEach(function(e){e.textContent=new Date().getFullYear();});</script>
+</body>
+</html>
