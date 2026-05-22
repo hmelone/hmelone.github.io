@@ -704,6 +704,22 @@ a:hover {
   padding-block: var(--s-8) var(--s-7);
   border-bottom: 1px solid var(--ink);
 }
+.cs-back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  font-family: var(--mono);
+  font-size: var(--t-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-3);
+  text-decoration: none;
+  margin-bottom: var(--s-5);
+  transition: color .2s var(--ease);
+}
+.cs-back:hover { color: var(--ink); }
+.cs-back .arrow-back { transition: transform .2s var(--ease); }
+.cs-back:hover .arrow-back { transform: translateX(-3px); }
 .cs-head .kicker {
   font-family: var(--mono);
   font-size: var(--t-mono);
