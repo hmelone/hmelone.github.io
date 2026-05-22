@@ -350,11 +350,11 @@ a:hover {
 }
 .entry {
   display: grid;
-  grid-template-columns: 100px 1fr auto;
-  gap: var(--s-6);
+  grid-template-columns: 72px 88px 1fr auto;
+  gap: var(--s-5);
   padding-block: var(--s-7);
   border-bottom: 1px solid var(--ink);
-  align-items: baseline;
+  align-items: center;
   text-decoration: none;
   color: var(--ink);
   transition: background .25s var(--ease);
@@ -362,6 +362,12 @@ a:hover {
   padding-inline: var(--gutter);
 }
 .entry:hover { background: var(--accent-wash); }
+.entry .thumb {
+  width: 88px;
+  height: 64px;
+  align-self: center;
+}
+.entry .thumb svg { width: 100%; height: 100%; display: block; }
 .entry .num {
   font-family: var(--display);
   font-style: italic;
@@ -370,7 +376,9 @@ a:hover {
   color: var(--ink);
   line-height: 1;
   letter-spacing: -0.04em;
+  align-self: center;
 }
+.entry .body { align-self: center; }
 .entry .body h3 {
   font-size: var(--t-2xl);
   font-style: italic;
@@ -421,6 +429,7 @@ a:hover {
   .entry { grid-template-columns: 64px 1fr; }
   .entry .num { font-size: 2.4rem; }
   .entry .arrow { display: none; }
+  .entry .thumb { display: none; }
 }
 
 /* ============================================================
@@ -1149,4 +1158,43 @@ a:hover {
   .portrait-intro .photo-frame {
     max-width: 280px;
   }
+}
+
+/* ============================================================
+   UTAH HANDBOOK — before/after cover comparison
+   ============================================================ */
+.utah-compare { margin: var(--s-6) 0 0; }
+.utah-compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--s-4);
+}
+.utah-shot {
+  position: relative;
+  border: 1px solid var(--rule);
+  background: #fff;
+  overflow: hidden;
+}
+.utah-shot img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 17 / 22;
+  object-fit: contain;
+  background: #fff;
+}
+.utah-tag {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: var(--mono);
+  font-size: var(--t-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: var(--ink);
+  color: var(--paper);
+  padding: var(--s-1) var(--s-3);
+}
+@media (max-width: 560px) {
+  .utah-compare-grid { grid-template-columns: 1fr; }
 }

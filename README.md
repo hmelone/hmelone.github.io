@@ -62,7 +62,7 @@ ideal.
 Once signed in, click the **+** in the top right of GitHub and choose
 **New repository**.
 
-- **Repository name:** `hollymelone.github.io`
+- **Repository name:** `hmelone.github.io`
   (Use this exact format — your username, then `.github.io`. This
   tells GitHub Pages to serve the repo at the matching URL with no
   extra setup.)
@@ -81,7 +81,7 @@ The easiest path that doesn't require installing anything:
 3. Scroll to the bottom and click **Commit changes**.
 
 GitHub will automatically detect this as a Pages site within a minute
-or two. Visit `https://hollymelone.github.io` (replace with your
+or two. Visit `https://hmelone.github.io` (replace with your
 actual username) and your site will be live.
 
 ### 4. Optional but recommended: a custom domain
@@ -96,7 +96,7 @@ Porkbun are all good and cost roughly $10–15/year):
    - Four `A` records pointing to `185.199.108.153`,
      `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
    - One `CNAME` record on `www` pointing to
-     `hollymelone.github.io`
+     `hmelone.github.io`
 4. Back in GitHub, check **Enforce HTTPS**.
 
 It can take an hour or so for DNS to propagate. After that,
