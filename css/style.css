@@ -705,6 +705,7 @@ a:hover {
   border-bottom: 1px solid var(--ink);
 }
 .cs-back {
+  float: right;
   display: inline-flex;
   align-items: center;
   gap: var(--s-2);
@@ -714,7 +715,7 @@ a:hover {
   letter-spacing: 0.08em;
   color: var(--ink-3);
   text-decoration: none;
-  margin-bottom: var(--s-5);
+  margin-top: var(--s-1);
   transition: color .2s var(--ease);
 }
 .cs-back:hover { color: var(--ink); }
@@ -732,6 +733,7 @@ a:hover {
   padding: var(--s-1) var(--s-3);
 }
 .cs-head h1 {
+  clear: both;
   font-size: var(--t-display);
   letter-spacing: -0.045em;
   line-height: 0.92;
