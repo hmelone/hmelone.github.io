@@ -350,7 +350,7 @@ a:hover {
 }
 .entry {
   display: grid;
-  grid-template-columns: 72px 88px 1fr auto;
+  grid-template-columns: 72px 1fr auto;
   gap: var(--s-5);
   padding-block: var(--s-7);
   border-bottom: 1px solid var(--ink);
@@ -361,6 +361,7 @@ a:hover {
   margin-inline: calc(var(--gutter) * -1);
   padding-inline: var(--gutter);
 }
+.entry.has-thumb { grid-template-columns: 72px 88px 1fr auto; }
 .entry:hover { background: var(--accent-wash); }
 .entry .thumb {
   width: 88px;
